@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Chat Bot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-[#eef2f6] flex w-full h-screen justify-center items-center p-4 sm:p-10 md:p-20"
+  >
+    <div
+      class="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 rounded-xl flex flex-col h-[90vh] shadow-md"
+    >
+      <header
+        class="bg-white flex flex-row p-2 items-center gap-2 w-full rounded-t-xl"
+      >
+        <img
+          src="https://www.cio.com/wp-content/uploads/2025/12/189347-0-83263200-1765762375-chatbot_ai_machine-learning_emerging-tech-100778305-orig.jpg?quality=50&strip=all&w=1024"
+          class="w-10 h-10 object-cover rounded-full"
+        />
+        <h2 class="font-semibold text-lg">Simple Chat Bot by Javier</h2>
+      </header>
+
+      <div
+        class="flex flex-col bg-[#f0f2f5] p-2 mt-2 overflow-y-auto h-full"
+        id="Chat"
+      ></div>
+
+      <footer
+        class="bg-white flex flex-row p-2 items-center gap-2 w-full rounded-b-xl"
+      >
+        <textarea
+          class="bg-[#f0f2f5] rounded-lg text-black p-2 w-full border-2 border-transparent focus:border-blue-500 focus:outline-none disabled:bg-gray-200 disabled:cursor-not-allowed overflow-hidden disabled:opacity-70 resize-none"
+          placeholder="Masukkan Text Disini"
+          id="Input"
+          rows="1"
+        ></textarea>
+        <button
+          class="p-2 bg-blue-500 rounded text-white disabled:bg-gray-400 disabled:cursor-not-allowed"
+          id="Kirim"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 12L3.269 3.125A59.769 59.769 0 0121.485 12 59.768 59.768 0 013.27 20.875L6 12zm0 0h7.5"
+            />
+          </svg>
+        </button>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
