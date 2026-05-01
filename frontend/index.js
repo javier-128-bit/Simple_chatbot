@@ -2,6 +2,7 @@ const BoxChat = document.getElementById("Chat");
 const Kirim = document.getElementById("Kirim");
 const Input = document.getElementById("Input");
 
+console.log(CONFIG.API_URL);
 const sendMessage = async () => {
   const Isi = Input.value.trim();
   if (Isi === "") return;
@@ -62,7 +63,7 @@ const AddChatBot = (text) => {
   const image = document.createElement("img");
   image.className = "w-7 h-7 object-cover rounded-full";
   image.src =
-    "https://www.cio.com/wp-content/uploads/2025/12/189347-0-83263200-1765762375-chatbot_ai_machine-learning_emerging-tech-100778305-orig.jpg?quality=50&strip=all&w=1024";
+    "https://media.licdn.com/dms/image/v2/D5603AQEp1SXpWsd1Aw/profile-displayphoto-scale_400_400/B56Z2USKxIKEAg-/0/1776309289807?e=1779321600&v=beta&t=RqYlKgNi9O756MtF3SryHJHvCwTuWpJTOmEbB0Oa9Ek";
   wrapper.appendChild(image);
   wrapper.appendChild(bubble);
   BoxChat.appendChild(wrapper);
